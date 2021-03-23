@@ -1,0 +1,38 @@
+from random import randint
+
+rolls = []
+def roll_many(n, m):
+    for i in range(m):
+        roll = randint(1,n)
+        rolls.append(roll)
+        print(roll)
+        
+rolls = []
+roll_many(6,2)
+
+
+'''
+for the dice roller and made it so you can pick the number of sides on the dice as well as the number of dice you want to roll because I like to challenge myself.
+It’s a fun and simple little project
+
+Creating the function
+For this part of the project, I imported 1 library: randint (from random).
+
+from random import randint
+
+Now we are ready to create our dice rolling function. For this function, there will be 2 required inputs: n and x.
+n will be the number of sides for the dice you are rolling.
+m will be the number of dice you are rolling.
+
+rolls = []
+def roll_many(n, m):
+    for i in range(m):
+        roll = randint(1,n)
+        rolls.append(roll)
+        print(roll)
+        
+  Now you can use this function to obtain dice rolls.
+# This cell will simulate rolling 4 six-sided dice.
+rolls = []
+roll_many(6,4)
+'''
